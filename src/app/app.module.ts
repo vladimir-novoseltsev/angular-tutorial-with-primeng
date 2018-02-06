@@ -3,6 +3,10 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { FormsModule } from '@angular/forms';
 import { NgModule } from '@angular/core';
 
+// PrimeNG modules
+import { ButtonModule } from 'primeng/button';
+import { InputTextModule } from 'primeng/inputtext';
+
 import { AppComponent } from './app.component';
 import { HeroesComponent } from './heroes/heroes.component';
 import { HeroDetailComponent } from './hero-detail/hero-detail.component';
@@ -26,6 +30,8 @@ import { MessageService } from './message.service';
     BrowserAnimationsModule,
     FormsModule,
     AppRoutingModule,
+    ButtonModule,
+    InputTextModule
   ],
   providers: [HeroService, MessageService],
   bootstrap: [AppComponent]
